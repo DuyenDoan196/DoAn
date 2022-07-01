@@ -1,0 +1,10 @@
+﻿
+@model IEnumerable<DoAn.Models.NSX>
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("giayTheoNSX", "Shoes", new { id = item.ID_NSX})" class="list-group-item">
+            @item.TenNsx
+        </a>
+    }
+</div>

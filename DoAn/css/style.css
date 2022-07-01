@@ -1,0 +1,169 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    /*sát lề*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins" sans-serif;
+}
+
+.header {
+    /*Tạo background gradient cho class header*/
+    background: yellow;
+    /*width:100%;
+    position:fixed;
+    bottom:0;*/
+}
+
+/* .header .row {
+    margin-top: 70px;
+} */
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width:90%;
+    position:fixed;
+    top:0;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+    nav ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header .row {
+    margin-top: 20px;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+    .col-2 img {
+        max-width: 100%;
+        padding: 50px 0;
+    }
+
+    .col-2 h1 {
+        font-size: 50px;
+        line-height: 60px;
+        margin: 30px 0;
+    }
+
+    .col-2 p {
+        line-height: 20px;
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+/* Danh mục - categories*/
+.small-container {
+    min-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30%;
+}
+
+    .col-3 img {
+        width: 100%;
+    }
+
+/* end cateegories */
+
+
+/*product display */
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+    .title::after {
+        content: "";
+        background: red;
+        width: 80px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.6s;
+}
+
+    .col-4 img {
+        width: 100%;
+    }
+    /* css chuyển động khi rê chuột hover vào sp */
+    .col-4:hover {
+        transform: translateY(-5px);
+    }
+/* set màu và size chữ cho sp */
+h4 {
+    color: #555;
+    font-size: normal;
+}
+/* set màu cho rating sp */
+.rating .fa {
+    color: red;
+}
+
+

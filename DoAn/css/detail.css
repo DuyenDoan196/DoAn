@@ -1,0 +1,55 @@
+﻿body {
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container_mota {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 30px;
+    padding: 15px;
+}
+
+.gioithieu {
+    padding-top: 15px;
+}
+
+.gia {
+    border: 5px;
+}
+
+.buttons_added {
+    border: 5px;
+    margin-top: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    min-width: 350px;
+    border-radius: 50px;
+    padding: 5px;
+    position: relative;
+    top: 15px
+}
+
+    .btn:hover {
+        opacity: 0.5;
+    }
+
+.btn-muangay {
+    background-color: rgb(209, 9, 9);
+}
+
+.btn-themvaogiohang {
+    background-color: rgb(77, 146, 7);
+}

@@ -1,0 +1,43 @@
+﻿
+@{ 
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<body>
+    <div class="container_mota">
+        <div class="imgsp">
+            <img src="@Model.Img" width="500px">
+        </div>
+        <div class="gioithieu">
+            <h2 style="color:red;"></h2>
+            <p style="font-size:20px;">
+               
+            </p>
+            <br><h3 class="gia" style="color: red; font-size: 25px;"></h3>
+                <div class="buttons_added" style="font-size: 25px;">
+                    <h2 style="color:red" class="product-name", >@Model.NameP</h2>
+
+                    <div class="product-price-discount">
+                        Giá: <span>@String.Format("{0:0,0}", Model.Price)</span> VNĐ
+                        <hr />
+                    </div>
+                    <p>
+                        @Model.Detail
+                    </p>
+                    <p>Loại:</p>
+                    <h3></h3>
+                    <label for="SoLuong">Số Lượng</label>
+                    <input class="minus is-form" type="button" value="-">
+                    <input class="input-qty" max="100" min="1" name="" type="number" value="1">
+                    <input class="plus is-form" type="button" value="+">
+                </div>
+            <div id="Buy">
+                <a href="@Url.Action("ThemGioHang","GioHang",new { @MaSP=@Model.ID_Product,@strURL=Request.Url.ToString()})">
+                    ĐẶT MUA
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+

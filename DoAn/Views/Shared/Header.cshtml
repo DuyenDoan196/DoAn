@@ -1,0 +1,62 @@
+﻿<div class="header">
+    <div class="container">
+        <!--logo & menu-->
+        <div style="color:yellow" class="navbar navbar-fixed-top" >
+            <!--logo-->
+            <div class="logo">
+                <img src="~/img/logo-one.png" width="125px">
+            </div>
+            <!--menu-->
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="@Url.Action("Index","Shoes")">Home</a></li>
+                    <li> <a href="">About</a></li>
+                    <li> <a href="">Contact</a></li>
+                </ul>
+                <div class="dropdown">
+                    <a class="dropbtn">Product</a>
+                    <div class="dropdown-content">
+                        @Html.Action("LoaiGiay", "Shoes")
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Producer</a>
+                    <div class="dropdown-content">
+                        @Html.Action("NhaSX", "Shoes")
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Account</a>
+                    <div class="dropdown-content">
+                        <a href="@Url.Action("DangKi","User")">Đăng Kí</a>
+                        <a href="@Url.Action("Login","User")">Đăng Nhập</a>
+                    </div>
+                </div>
+            </nav>
+            <!--icon cart-->
+            <a href="@Url.Action("GioHang","GioHang")">
+                <img src="~/img/cart.png" width="25px" height="25px">
+            </a>
+            
+        </div>
+        <!-- End logo and menu -->
+        <!-- banner -->
+        <div class="row">
+            <!-- cột phần chữ -->
+            <div class="col-2">
+                <h1>Đã chơi là phải CHẤT</h1>
+                <p>
+                    Với nhiều mẫu mã đẹp phong phú và đa dạng về kiểu dáng và màu sắc,
+                    <br> bạn dễ dàng lựa chọn cho bản thân một đôi giày ưng ý.
+                </p>
+                <!--<a href="" class="btn">Explore now &#10132;</a>-->
+            </div>
+            <!-- cột phần hình ảnh -->
+            <div class="col-2">
+                <img src="~/img/all-sports-banner.png">
+            </div>
+        </div>
+        <!-- end banner -->
+    </div>
+</div>
