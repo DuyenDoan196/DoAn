@@ -1,0 +1,28 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;   
+}
+.login {
+    background-color: yellow;
+    padding: 30px;
+    font-size: 25px;
+}
+
+.container_admin {
+    border: 2px solid black;
+    padding: 20px;
+    max-width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+.form-group {
+    margin: 5px;
+    padding: 5px;
+}
+
+.Register {
+    margin: 5px;
+    padding: 5px;
+}

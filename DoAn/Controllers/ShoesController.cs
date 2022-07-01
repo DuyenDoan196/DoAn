@@ -12,7 +12,6 @@ namespace DoAn.Controllers
         // tạo 1 đối tượng chứa toàn bộ csdl
         DbWebGiayDataContext db = new DbWebGiayDataContext();
 
-
         private List<Product> LayGiayMoi(int count)
         {
             //sx giảm dần theo ngày update_at
@@ -25,6 +24,18 @@ namespace DoAn.Controllers
             //var giayMoi = LayGiayMoi();
             return View(giaymoi);
         }
+
+        public List<Product> ListFusal (int id = 1)
+        {
+            return db.Products.OrderByDescending(a => a.ID_Cat == id).Take(id).ToList();
+        }
+        //[ValidateInput(false)]
+        public ActionResult listF()
+        {
+            var list = ListFusal(100);
+            return View(list);
+        }
+
 
         // giày theo loại
         public ActionResult LoaiGiay()

@@ -1,0 +1,92 @@
+﻿@model DoAn.Models.Product
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>DetailProduct</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Product:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_Cat)
+        </dd>
+
+        <dt>
+            NSX:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_NSX)
+        </dd>
+
+        <dt>
+            NameNSX:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameP)
+        </dd>
+
+        <dt>
+            Price:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            Detail:
+        </dt>
+
+        <dd>
+            @String.Format("{0:0,0}",Model.Detail)VND
+        </dd>
+
+        <dt>
+            Img:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Img)
+        </dd>
+
+        <dt>
+            Quantity:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            Update_at:
+        </dt>
+
+        <dd>
+            @String.Format("{0:dd/mm/yyyy}", Model.Update_at)VND
+
+        </dd>
+
+        <dt>
+            State:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Detail", "Edit", new { id = Model.ID_Product }) |
+    @Html.ActionLink("Back to List", "Product")
+</p>

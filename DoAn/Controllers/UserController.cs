@@ -44,7 +44,6 @@ namespace DoAn.Controllers
                 if (user != null)
                 {
                     ViewBag.ThongBao = " Đăng nhập thành công";
-                    return RedirectToAction("Index","Shoes");
                 }
                 else
                 {
@@ -94,7 +93,6 @@ namespace DoAn.Controllers
             else
             {
                 //gán giá trị mới cho đối tượng được tạo mới
-
                 user.UserName = Username;
                 user.Email = Email;
                 user.Phone = PhoneNumber;

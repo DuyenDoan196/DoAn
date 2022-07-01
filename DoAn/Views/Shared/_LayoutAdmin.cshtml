@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/Dan.css">
+    <script src="~/tinymce_6.1.0/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ Selection: 'textarea' });</script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <!--logo & menu-->
+            <div style="color:yellow" class="navbar navbar-fixed-top">
+                <!--logo-->
+                <div class="logo">
+                    <img src="~/img/logo-one.png" width="125px">
+                </div>
+                <!--menu-->
+                <nav>
+                    <ul id="MenuItems">
+                        <li>
+                            @Html.ActionLink("TRANG CHỦ", "Index", "Admin")
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <li>
+                            @Html.ActionLink("QUẢN LÍ CHỦ ĐỀ", "Product", "Admin")
+                        </li>
+                    </div>
+                    <div class="dropdown">
+                        <li>
+                            @Html.ActionLink("QUẢN LÍ NHÀ SẢN XUẤT", "NhaSX", "Admin")
+                        </li>
+                    </div>
+                    
+                </nav>
+                
+                <!--icon cart-->
+                <a href="@Url.Action("GioHang","GioHang")">
+                    <img src="~/img/cart.png" width="25px" height="25px">
+                </a>
+
+            </div>
+            <!-- End logo and menu -->
+            <!-- banner -->
+            <div class="row">
+                <!-- cột phần chữ -->
+                <div class="col-2">
+                    <h1>Đã chơi là phải CHẤT</h1>
+                    <p>
+                        Với nhiều mẫu mã đẹp phong phú và đa dạng về kiểu dáng và màu sắc,
+                        <br> bạn dễ dàng lựa chọn cho bản thân một đôi giày ưng ý.
+                    </p>
+                    <!--<a href="" class="btn">Explore now &#10132;</a>-->
+                </div>
+                <!-- cột phần hình ảnh -->
+                <div class="col-2">
+                    <img src="~/img/all-sports-banner.png">
+                </div>
+            </div>
+            <!-- end banner -->
+        </div>
+    </div>
+
+    @*<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li>
+                @Html.ActionLink("TRANG CHỦ", "Index", "Admin")
+            </li>
+            <li>
+                @Html.ActionLink("QUẢN LÍ CHỦ ĐỀ", "Product", "Admin")
+            </li>
+            <li>
+                @Html.ActionLink("QUẢN LÍ NHÀ SẢN XUẤT", "NhaSX", "Admin")
+            </li>
+
+        </ul>
+    </div>*@
+    <div>
+        @RenderBody()
+    </div>
+    @Html.Partial("Footer");
+
+</body>
+</html>

@@ -13,15 +13,13 @@ namespace DoAn.Models
         public string Hinh { get; set; }
         public double GiaSP { get; set; }
         public int SoLuong { get; set; }
-        public int? SoLuongTon { get; set; }
-
         public double ThanhTien
         {
             get { return SoLuong * GiaSP; }
         }
-        public GioHang(int ID_Product)
+        public GioHang(int id)
         {
-            MaSP = ID_Product;
+            MaSP = id;
             Product sanpham = db.Products.Single(n => n.ID_Product == MaSP);
             TenSP = sanpham.NameP;
             Hinh = sanpham.Img;
