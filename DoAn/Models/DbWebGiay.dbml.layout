@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DbWebGiay">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.75" name="DbWebGiay">
   <DataContextMoniker Name="/DbWebGiayDataContext" />
   <nestedChildShapes>
     <classShape Id="e051df25-db77-4253-8777-0a4359d248c4" absoluteBounds="0.75, 2.75, 2, 1.1939925130208335">
@@ -38,10 +38,10 @@
         <elementListCompartment Id="9c4a5f81-0a21-40ae-9be2-25ca84e02ae0" absoluteBounds="3.515, 2.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="e156778e-6eff-49b3-b1ac-d380c8da0ca3" absoluteBounds="0.75, 6.125, 2, 2.1554996744791666">
+    <classShape Id="e156778e-6eff-49b3-b1ac-d380c8da0ca3" absoluteBounds="0.75, 6.125, 2, 2.3478011067708353">
       <DataClassMoniker Name="/DbWebGiayDataContext/User" />
       <nestedChildShapes>
-        <elementListCompartment Id="59990853-9222-46b3-b433-a0b0ec6d9fdf" absoluteBounds="0.765, 6.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="59990853-9222-46b3-b433-a0b0ec6d9fdf" absoluteBounds="0.765, 6.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <associationConnector edgePoints="[(5.5 : 7.6050439453125); (6.46875 : 7.6050439453125); (6.46875 : 4.07859537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
@@ -65,19 +65,25 @@
         <classShapeMoniker Id="3aaad3c8-4269-452d-8236-27767b515a48" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 1.34699625651042); (4.5 : 1.34699625651042); (4.5 : 2)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(2.75 : 1.34699625651042); (4.5 : 1.34699625651042); (4.5 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DbWebGiayDataContext/NSX/NSX_Product" />
       <nodes>
         <classShapeMoniker Id="56dc28e3-9322-43be-b5a1-4999eed7b67b" />
         <classShapeMoniker Id="3aaad3c8-4269-452d-8236-27767b515a48" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 7.31814697265625); (3.5 : 7.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 7.31814697265625); (3.5 : 7.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DbWebGiayDataContext/User/User_Order" />
       <nodes>
         <classShapeMoniker Id="e156778e-6eff-49b3-b1ac-d380c8da0ca3" />
         <classShapeMoniker Id="27efbaa7-65ce-4898-a128-bc296341a811" />
       </nodes>
     </associationConnector>
+    <classShape Id="00cc164c-3056-4683-85d5-8de23def4f83" absoluteBounds="0.5, 4.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DbWebGiayDataContext/Admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57fe2a2b-19df-42e2-8ec7-49ad0fb26ccb" absoluteBounds="0.51500000000000057, 4.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

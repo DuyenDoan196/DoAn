@@ -3,34 +3,43 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
+@*@foreach (var giay in Model)
+    {
+        <li>
+            <a href="@Url.Action("Detail","Shoes", new { id= giay.ID_Product})">
+                <img alt="@giay.NameP" src="~/img/@giay.Img"/>
+                <span> @giay.NameP</span>
+
+            </a>
+        </li>
+    }*@
+@*<a href="~/Views/Shoes/Index.cshtml">~/Views/Shoes/Index.cshtml</a>*@
 <div class="row">
     @foreach (var giay in Model)
     {
-            <div class="col-4">
-                <div class="thumbnail">
-                    <a href="@Url.Action("Detail", "Shoes", new { id = giay.ID_Product })">
-                        <img src="@giay.Img" />
-                    </a>
-                    <div>
-                        <br />
-                        <h4 style="text-align:center">  
-                            @giay.NameP
-                            <br />
-                            <p style="color: red">Giá: <span>@String.Format("{0:0,0}", giay.Price)</span> VNĐ</p>
-                        </h4>
-                        <p></p>
-                    </div>
-                    <div class="ratings">
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </p>
-                    </div>
+        <div class="col-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Detail", "Shoes",new { id=giay.ID_Product})">
+                    <img src="@giay.Img" />
+                </a>
+                <div>
+                    <br />
+                    <h4 style="text-align:center">
+                        @giay.NameP
+                        <p>Giá bán:<span style="color:red">@giay.Price</span></p>
+                    </h4>
+                    <p></p>
+                </div>
+                <div class="ratings">
+                    @*<p class="pull-right">15 reviews </p>*@
+                    <p>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </p>
                 </div>
             </div>
+        </div>
     }
 </div>
-
 
